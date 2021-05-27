@@ -1,0 +1,44 @@
+{:navgroup: .navgroup}
+{:topicgroup: .topicgroup}
+
+{: .toc subcollection="vlans" category="network_classic" audience="service" href="/docs/vlans?topic=vlans-getting-started" console-page="/classic/network/vlans" product-page="https://www.ibm.com/cloud/blog/introducing-premium-vlans-are-you-compute-first-or-network-first" path="vlans"}
+MS SQL Implementation Guide
+
+    {: .navgroup id="learn"}
+
+    {: .topicgroup}
+        01-about.md
+        02-single-az.md
+        03-bastion.md
+        04-ad.md
+        05-sql.md
+        06-dual-az.md
+        07-ad.md
+        08-file-share.md
+        09-create-cluster.md
+        10-dual-mzr.md
+        11-ad.md
+        12-extend-cluster.md
+        13-baseline.md
+        14-security-groups.md
+        15-testing.md
+        16-ops.md
+        17-migration.md
+        18-configini.md
+
+        {: .topicgroup}
+        Troubleshooting MS SQL
+           ts-ms-sql-verify-open-ports.md
+           ts-ms-sql-remove-smb-share.md
+           ts-ms-sql-rename-virtual-servers.md
+           ts-ms-sql-add-text-to-file.md
+           ts-ms-sql-use-domain-service-account.md
+           ts-ms-sql-verify-dnn.md
+           ts-ms-sql-verify-server-listening.md
+           ts-ms-sql-windows-server-updates.md
+
+    {: .topicgroup}
+    MS SQL Solution Tutorials
+        tutorial-mssql-singleaz.md
+
+    {: .navgroup-end}
