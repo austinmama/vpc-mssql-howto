@@ -4,9 +4,9 @@ copyright:
    years: 2021
 lastupdated: "2021-05-26"
 
-keywords: 
+keywords:
 
-subcollection: vpc
+subcollection: vpc-mssql-howto
 
 content-type: tutorial
 services: vpc
@@ -21,7 +21,7 @@ completion-time: 2h
 {:tip: .tip}
 {:note: .note}
 {:external: target="_blank" .external}
-{:step: data-tutorial-type='step'} 
+{:step: data-tutorial-type='step'}
 
 # Install Microsoft SQL Server in your Virtual Private Cloud (VPC)
 {: #tutorial-mssql-singleaz}
@@ -29,7 +29,7 @@ completion-time: 2h
 {: toc-services="vpc"}
 {: toc-completion-time="2h"}
 
-<!-- The short description should be a single, concise paragraph that contains one or two sentences and no more than 50 words. Briefly mention what the user's learning goal is and include the following SEO keywords in the title short description: IBM Cloud, ServiceName, tutorial.--> 
+<!-- The short description should be a single, concise paragraph that contains one or two sentences and no more than 50 words. Briefly mention what the user's learning goal is and include the following SEO keywords in the title short description: IBM Cloud, ServiceName, tutorial.-->
 
 In this tutorial, you learn how to install Microsoft SQL Server 2019, with a Bring Your Own Licence (BYOL) and a configuration file, in the next generation of the IBM Cloud platform, in your [Virtual Private Cloud](/docs/vpc?topic=vpc-about-vpc). VPC gives you the security of a private cloud environment with the dynamic scalability of a public cloud.
 {: shortdesc}
@@ -187,7 +187,7 @@ In this step we will use a PowerShell command to configure the storage pools. Th
 * The virtual disk is initialized with a GPT partition and assigned a drive letter.
 * The virtual disk is formatted with the NTFS filesystem with a block size of 64KB and assigned a label.
 
-1. On the virtual server that will host SQL Server and in a PowerShell console session that has administrative access, use the following PowerShell command, replacing <SerialNumber> with the serial number for the sqldb01-data volume. 
+1. On the virtual server that will host SQL Server and in a PowerShell console session that has administrative access, use the following PowerShell command, replacing <SerialNumber> with the serial number for the sqldb01-data volume.
 
 ```
 $dataserial = "<SerialNumber>"
@@ -195,7 +195,7 @@ New-StoragePool -FriendlyName "sqldatapool" -StorageSubsystemFriendlyName "Windo
 ```
 {: pre}
 
-2. To create the sqllogpool use the following PowerShell command, replacing <SerialNumber> with the serial number for the sqldb01-log volume. 
+2. To create the sqllogpool use the following PowerShell command, replacing <SerialNumber> with the serial number for the sqldb01-log volume.
 
 ```
 $logserial = "<SerialNumber>"
@@ -211,7 +211,7 @@ The drive for tempdb does not use Storage Spaces, as Instance Storage will only 
 * Create a drive initialized with a GPT partition and assigned a drive letter of F.
 * The drive is formatted with the NTFS filesystem with a block size of 64KB and assigned a label of TEMPDB.
 
-On the virtual server that will host SQL Server and in a PowerShell console session that has administrative access, use the following PowerShell command, replacing <SerialNumber> with the serial number for the instance storage volume. 
+On the virtual server that will host SQL Server and in a PowerShell console session that has administrative access, use the following PowerShell command, replacing <SerialNumber> with the serial number for the instance storage volume.
 
 ```
 $tempdbserial = "<SerialNumber>"
@@ -244,7 +244,7 @@ SETUP.exe /ConfigurationFile=ConfigurationFile.ini /TCPENABLED="1" /SQLSVCPASSWO
 {: ##tutorial-mssql-singleaz-tcpip}
 {: step}
 
-In this step we will use the SQL Server Configuration Manager to verify that TCP/IP has been enabled on the server's interface and the loopback address (127.0.0.1) 
+In this step we will use the SQL Server Configuration Manager to verify that TCP/IP has been enabled on the server's interface and the loopback address (127.0.0.1)
 
 1. On the SQL server, open the SQL Server Configuration Manager by selecting it from the Start menu.
 1. Expand the SQL Server Network Configuration node to view the Protocols for MSSQLSERVER.

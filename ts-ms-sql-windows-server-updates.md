@@ -6,7 +6,7 @@ lastupdated: "2021-05-25"
 
 keywords:
 
-subcollection: vpc
+subcollection: vpc-mssql-howto
 
 ---
 

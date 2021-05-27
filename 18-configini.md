@@ -6,7 +6,7 @@ lastupdated: "2021-05-23"
 
 keywords:
 
-subcollection: vlans
+subcollection: vpc-mssql-howto
 
 ---
 
@@ -30,7 +30,7 @@ subcollection: vlans
 # Creating an SQL Server configuration file
 {: #mssql-configfile}
 
-To create a configuration file, use the SQL Server interactive installer wizard. Follow the wizard through to the Ready to Install page. The path to the configuration file is specified in the Ready to Install page in the configuration file path section. 
+To create a configuration file, use the SQL Server interactive installer wizard. Follow the wizard through to the Ready to Install page. The path to the configuration file is specified in the Ready to Install page in the configuration file path section.
 {: shortdesc}
 
 For more information, see [Install SQL Server from the Installation Wizard (Setup)](https://docs.microsoft.com/en-us/sql/database-engine/install-windows/install-sql-server-from-the-installation-wizard-setup?view=sql-server-ver15){:external}.

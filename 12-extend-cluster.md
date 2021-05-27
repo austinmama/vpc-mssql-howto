@@ -6,7 +6,7 @@ lastupdated: "2021-05-24"
 
 keywords:
 
-subcollection: vlans
+subcollection: vpc-mssql-howto
 
 ---
 
@@ -30,7 +30,7 @@ subcollection: vlans
 # Extending the cluster
 {: #mssql-excluster}
 
-This section steps through the build tasks needed to extend the Windows Server Failover Cluster (WSFC) and the availability group for use in the dual region deployment. 
+This section steps through the build tasks needed to extend the Windows Server Failover Cluster (WSFC) and the availability group for use in the dual region deployment.
 {: shortdesc}
 
 This guide assumes that you:

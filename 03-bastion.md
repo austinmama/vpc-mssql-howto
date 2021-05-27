@@ -6,7 +6,7 @@ lastupdated: "2021-05-24"
 
 keywords:
 
-subcollection: vlans
+subcollection: vpc-mssql-howto
 
 ---
 

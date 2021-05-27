@@ -6,7 +6,7 @@ lastupdated: "2021-05-24"
 
 keywords:
 
-subcollection: vlans
+subcollection: vpc-mssql-howto
 
 ---
 
@@ -30,7 +30,7 @@ subcollection: vlans
 # Creating a cluster
 {: #mssql-cluster}
 
-This section steps through the build tasks needed to create the Windows Server Failover Cluster (WSFC) and the availability group. 
+This section steps through the build tasks needed to create the Windows Server Failover Cluster (WSFC) and the availability group.
 {: shortdesc}
 
 This guide assumes that you:
@@ -166,7 +166,7 @@ To configure an availability group, a database must be available on the primary 
    Restore-SqlDatabase -Database "TestDatabase" -BackupFile $backupfiledata -ServerInstance $sqldb02 -NoRecovery  
    Restore-SqlDatabase -Database "TestDatabase" -BackupFile $backupfilelog -ServerInstance $sqldb02 -RestoreAction Log -NoRecovery
    ```
-   
+
 The new secondary database is in the RESTORING state. Until it is joined to the availability group, it is not accessible.
 
 ## Creating an availability group

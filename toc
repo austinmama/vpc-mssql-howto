@@ -1,7 +1,7 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="vlans" category="network_classic" audience="service" href="/docs/vlans?topic=vlans-getting-started" console-page="/classic/network/vlans" product-page="https://www.ibm.com/cloud/blog/introducing-premium-vlans-are-you-compute-first-or-network-first" path="vlans"}
+{: .toc subcollection="vpc-mssql-howto" category="network_classic" audience="service" href="/docs/vlans?topic=vlans-getting-started" console-page="/classic/network/vlans" product-page="https://www.ibm.com/cloud/blog/introducing-premium-vlans-are-you-compute-first-or-network-first" path="vpc-mssql-howto"}
 MS SQL Implementation Guide
 
     {: .navgroup id="learn"}

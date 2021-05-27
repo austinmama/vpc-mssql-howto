@@ -6,7 +6,7 @@ lastupdated: "2021-05-24"
 
 keywords:
 
-subcollection: vlans
+subcollection: vpc-mssql-howto
 
 ---
 
@@ -30,7 +30,7 @@ subcollection: vlans
 # Testing your deployments
 {: #mssql-testing}
 
-This section describes infrastructure testing that can be easily achieved to test your deployments. 
+This section describes infrastructure testing that can be easily achieved to test your deployments.
 {: shortdesc}
 
 ## SQL server storage subsystem performance testing
